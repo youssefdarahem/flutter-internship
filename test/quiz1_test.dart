@@ -3,6 +3,9 @@ import 'package:test/test.dart';
 
 void main() {
   test('calculate', () {
-    expect(calculate(), 42);
+    expect(isLeap(2000), true);
+    expect(isLeap(1997), false);
+    expect(isLeap(1996), true);
+    expect(isLeap(1900), false);
   });
 }
